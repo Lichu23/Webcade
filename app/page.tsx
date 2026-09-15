@@ -1,11 +1,8 @@
 import games from "../data/games.json";
+import ArcadeHome from "./arcade-home";
+import type { Game } from "../lib/game";
 
 export default function Home() {
-  return (
-    <main>
-      <h1>Astra Arcade</h1>
-      <p>Private catalogue. Games are added through the terminal.</p>
-      <p>{games.length} published games</p>
-    </main>
-  );
+  const publishedGames = (games as Game[]).filter((game) => game.status === "published");
+  return <ArcadeHome games={publishedGames} />;
 }
