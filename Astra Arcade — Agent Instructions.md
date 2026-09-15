@@ -688,9 +688,9 @@ Complete the application in these six phases. Do not add unrelated features befo
 
 ## Phase 2 — Public arcade experience
 
-- [ ] Build the Friv-style homepage grid and game cards.
-- [ ] Add search, categories, featured games, and new games.
-- [ ] Add `/game/[slug]` detail pages with attribution and source links.
+- [x] Build the Friv-style homepage grid and game cards.
+- [x] Add search, categories, featured games, and new games.
+- [x] Add `/game/[slug]` detail pages with attribution and source links.
 
 ## Phase 3 — Play modes
 

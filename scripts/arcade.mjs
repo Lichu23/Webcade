@@ -49,6 +49,10 @@ function validate(slug) {
   if (!game.creator?.name) errors.push("creator.name is required");
   if (!['embedded', 'external', 'self-hosted'].includes(game.play?.mode)) errors.push("play.mode is invalid");
   if (!['allowed', 'unknown', 'not-allowed'].includes(game.rights?.embedding)) errors.push("rights.embedding is invalid");
+  if (!['allowed', 'unknown', 'not-allowed'].includes(game.rights?.redistribution)) errors.push("rights.redistribution is invalid");
+  if (game.play?.mode === "embedded" && game.rights?.embedding !== "allowed") errors.push("embedded games require rights.embedding=allowed");
+  if (game.play?.mode === "self-hosted" && game.rights?.redistribution !== "allowed") errors.push("self-hosted games require rights.redistribution=allowed");
+  if (game.play?.mode === "self-hosted" && (!game.play.url || !game.play.url.startsWith(`/games/${game.slug}/`) || game.play.url.includes("..") || game.play.url.includes("\\"))) errors.push("self-hosted games must use /games/<slug>/");
   if (errors.length) return fail(errors.join("; "));
   console.log(`Valid: ${slug} (${game.status})`);
 }
