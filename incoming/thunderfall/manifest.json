@@ -1,0 +1,42 @@
+{
+    "title":  "THUNDERFALL / é›·éœ†æˆ˜æœº Â· å¤©ç©¹è¿œå¾",
+    "description":  "Pilot three distinct fighters through five sectors and multi-phase bosses, dodge drifting bullets and telegraphed lasers, and collect four weapon colors in a campaign lasting at least ten minutes of active combat.",
+    "shortDescription":  "A five-sector bullet-hell shooter with three fighters and multi-phase bosses.",
+    "categories":  [
+                       "Action",
+                       "Arcade"
+                   ],
+    "tags":  [
+                 "bullet hell",
+                 "shooter",
+                 "canvas",
+                 "web audio"
+             ],
+    "thumbnail":  "",
+    "screenshots":  [
+
+                    ],
+    "creator":  {
+                    "name":  "jackroc",
+                    "url":  "https://github.com/MartinDelophy/awesome-gpt-6-astra"
+                },
+    "play":  {
+                 "url":  "https://thunderfall.vercel.app",
+                 "mode":  "embedded"
+             },
+    "platform":  {
+                     "desktop":  true,
+                     "mobile":  true,
+                     "touch":  true,
+                     "keyboard":  true,
+                     "gamepad":  false
+                 },
+    "origin":  "original",
+    "rights":  {
+                   "redistribution":  "unknown",
+                   "embedding":  "allowed"
+               },
+    "sourceCatalog":  "https://github.com/MartinDelophy/awesome-gpt-6-astra",
+    "sourceEntry":  "https://thunderfall.vercel.app",
+    "featured":  false
+}

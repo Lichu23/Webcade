@@ -1,0 +1,41 @@
+﻿{
+    "title":  "The Simpsons: Hit \u0026 Run - WASM",
+    "description":  "A browser-hosted WebAssembly fan remake of The Simpsons: Hit \u0026 Run.",
+    "shortDescription":  "The Simpsons: Hit \u0026 Run running in the browser via WebAssembly.",
+    "categories":  [
+                       "Action",
+                       "Racing"
+                   ],
+    "tags":  [
+                 "wasm",
+                 "fan remake",
+                 "The Simpsons"
+             ],
+    "thumbnail":  "",
+    "screenshots":  [
+
+                    ],
+    "creator":  {
+                    "name":  "C. Joseph",
+                    "url":  "https://cjoseph.workers.dev"
+                },
+    "play":  {
+                 "url":  "https://shar-wasm.cjoseph.workers.dev",
+                 "mode":  "embedded"
+             },
+    "platform":  {
+                     "desktop":  true,
+                     "mobile":  true,
+                     "touch":  true,
+                     "keyboard":  true,
+                     "gamepad":  false
+                 },
+    "origin":  "fan-remake",
+    "rights":  {
+                   "redistribution":  "unknown",
+                   "embedding":  "allowed"
+               },
+    "sourceCatalog":  "local",
+    "sourceEntry":  "user-provided URL",
+    "featured":  false
+}

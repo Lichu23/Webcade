@@ -1,0 +1,32 @@
+{
+  "title": "Stadium Elite — El Clásico",
+  "description": "A desktop 3D football experience inspired by the intensity and spectacle of El Clásico.",
+  "shortDescription": "A 3D football match built for desktop play.",
+  "categories": ["Sports", "Action"],
+  "tags": ["football", "soccer", "3D", "desktop"],
+  "thumbnail": "",
+  "screenshots": [],
+  "creator": {
+    "name": "Mindblown (@mind)",
+    "url": "https://github.com/MartinDelophy/awesome-gpt-6-astra"
+  },
+  "play": {
+    "url": "https://stadium-elite.mindblown.ai",
+    "mode": "external"
+  },
+  "platform": {
+    "desktop": true,
+    "mobile": false,
+    "touch": false,
+    "keyboard": true,
+    "gamepad": false
+  },
+  "origin": "inspired",
+  "rights": {
+    "redistribution": "unknown",
+    "embedding": "not-allowed"
+  },
+  "sourceCatalog": "https://github.com/MartinDelophy/awesome-gpt-6-astra",
+  "sourceEntry": "https://stadium-elite.mindblown.ai",
+  "featured": false
+}

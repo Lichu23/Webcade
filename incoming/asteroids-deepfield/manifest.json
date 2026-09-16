@@ -1,0 +1,42 @@
+{
+    "title":  "ASTEROIDS Â· Deepfield",
+    "description":  "Pilot an Asteroids-style cockpit with four camera views, radar, twin cannons and inertial flight.",
+    "shortDescription":  "An Asteroids-style cockpit shooter with radar and inertial flight.",
+    "categories":  [
+                       "Action",
+                       "Arcade"
+                   ],
+    "tags":  [
+                 "asteroids",
+                 "cockpit",
+                 "space shooter",
+                 "webgl"
+             ],
+    "thumbnail":  "",
+    "screenshots":  [
+
+                    ],
+    "creator":  {
+                    "name":  "Eyes Wide Open",
+                    "url":  "https://github.com/MartinDelophy/awesome-gpt-6-astra"
+                },
+    "play":  {
+                 "url":  "https://asteroids-deepfield-cockpit.dan200200.chatgpt.site",
+                 "mode":  "embedded"
+             },
+    "platform":  {
+                     "desktop":  true,
+                     "mobile":  false,
+                     "touch":  false,
+                     "keyboard":  true,
+                     "gamepad":  false
+                 },
+    "origin":  "original",
+    "rights":  {
+                   "redistribution":  "unknown",
+                   "embedding":  "allowed"
+               },
+    "sourceCatalog":  "https://github.com/MartinDelophy/awesome-gpt-6-astra",
+    "sourceEntry":  "https://asteroids-deepfield-cockpit.dan200200.chatgpt.site",
+    "featured":  false
+}

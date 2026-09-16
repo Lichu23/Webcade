@@ -1,0 +1,42 @@
+{
+    "title":  "IRON BASTION / é’¢é“é˜²çº¿",
+    "description":  "Defend a beacon against waves of enemy tanks across six sectors in a 3D battlefield with destructible brick walls, a dash and an electromagnetic pulse.",
+    "shortDescription":  "Defend a beacon from tank waves across six destructible 3D sectors.",
+    "categories":  [
+                       "Action",
+                       "Strategy"
+                   ],
+    "tags":  [
+                 "tank defense",
+                 "webgl",
+                 "tower defense",
+                 "touch"
+             ],
+    "thumbnail":  "",
+    "screenshots":  [
+
+                    ],
+    "creator":  {
+                    "name":  "chat01.ai",
+                    "url":  "https://github.com/MartinDelophy/awesome-gpt-6-astra"
+                },
+    "play":  {
+                 "url":  "https://iron-bastion.zecoba.workers.dev",
+                 "mode":  "embedded"
+             },
+    "platform":  {
+                     "desktop":  true,
+                     "mobile":  true,
+                     "touch":  true,
+                     "keyboard":  true,
+                     "gamepad":  false
+                 },
+    "origin":  "original",
+    "rights":  {
+                   "redistribution":  "unknown",
+                   "embedding":  "allowed"
+               },
+    "sourceCatalog":  "https://github.com/MartinDelophy/awesome-gpt-6-astra",
+    "sourceEntry":  "https://iron-bastion.zecoba.workers.dev",
+    "featured":  false
+}

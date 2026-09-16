@@ -1,1 +1,316 @@
-﻿[]
+[
+  {
+    "title": "The Simpsons: Hit & Run - WASM",
+    "description": "A browser-hosted WebAssembly fan remake of The Simpsons: Hit & Run.",
+    "shortDescription": "The Simpsons: Hit & Run running in the browser via WebAssembly.",
+    "categories": [
+      "Action",
+      "Racing"
+    ],
+    "tags": [
+      "wasm",
+      "fan remake",
+      "The Simpsons"
+    ],
+    "thumbnail": "",
+    "screenshots": [],
+    "creator": {
+      "name": "C. Joseph",
+      "url": "https://cjoseph.workers.dev"
+    },
+    "play": {
+      "url": "https://shar-wasm.cjoseph.workers.dev",
+      "mode": "external"
+    },
+    "platform": {
+      "desktop": true,
+      "mobile": true,
+      "touch": true,
+      "keyboard": true,
+      "gamepad": false
+    },
+    "origin": "fan-remake",
+    "rights": {
+      "redistribution": "unknown",
+      "embedding": "not-allowed"
+    },
+    "sourceCatalog": "local",
+    "sourceEntry": "user-provided URL",
+    "featured": false,
+    "id": "9eaf4a20-2792-4508-8224-cddcd5d77593",
+    "slug": "the-simpsons-hit-run-wasm",
+    "status": "published",
+    "discoveredAt": "2026-09-16T11:38:28.741Z",
+    "createdAt": "2026-09-16T11:38:34.698Z"
+  },
+  {
+    "title": "THUNDERFALL / é›·éœ†æˆ˜æœº Â· å¤©ç©¹è¿œå¾",
+    "description": "Pilot three distinct fighters through five sectors and multi-phase bosses, dodge drifting bullets and telegraphed lasers, and collect four weapon colors in a campaign lasting at least ten minutes of active combat.",
+    "shortDescription": "A five-sector bullet-hell shooter with three fighters and multi-phase bosses.",
+    "categories": [
+      "Action",
+      "Arcade"
+    ],
+    "tags": [
+      "bullet hell",
+      "shooter",
+      "canvas",
+      "web audio"
+    ],
+    "thumbnail": "",
+    "screenshots": [],
+    "creator": {
+      "name": "jackroc",
+      "url": "https://github.com/MartinDelophy/awesome-gpt-6-astra"
+    },
+    "play": {
+      "url": "https://thunderfall.vercel.app",
+      "mode": "embedded"
+    },
+    "platform": {
+      "desktop": true,
+      "mobile": true,
+      "touch": true,
+      "keyboard": true,
+      "gamepad": false
+    },
+    "origin": "original",
+    "rights": {
+      "redistribution": "unknown",
+      "embedding": "allowed"
+    },
+    "sourceCatalog": "https://github.com/MartinDelophy/awesome-gpt-6-astra",
+    "sourceEntry": "https://thunderfall.vercel.app",
+    "featured": false,
+    "id": "9426716a-02c3-4b6d-8852-8f9288e55081",
+    "slug": "thunderfall",
+    "status": "published",
+    "discoveredAt": "2026-09-16T13:57:10.436Z",
+    "createdAt": "2026-09-16T14:02:28.716Z"
+  },
+  {
+    "title": "IRON BASTION / é’¢é“é˜²çº¿",
+    "description": "Defend a beacon against waves of enemy tanks across six sectors in a 3D battlefield with destructible brick walls, a dash and an electromagnetic pulse.",
+    "shortDescription": "Defend a beacon from tank waves across six destructible 3D sectors.",
+    "categories": [
+      "Action",
+      "Strategy"
+    ],
+    "tags": [
+      "tank defense",
+      "webgl",
+      "tower defense",
+      "touch"
+    ],
+    "thumbnail": "",
+    "screenshots": [],
+    "creator": {
+      "name": "chat01.ai",
+      "url": "https://github.com/MartinDelophy/awesome-gpt-6-astra"
+    },
+    "play": {
+      "url": "https://iron-bastion.zecoba.workers.dev",
+      "mode": "embedded"
+    },
+    "platform": {
+      "desktop": true,
+      "mobile": true,
+      "touch": true,
+      "keyboard": true,
+      "gamepad": false
+    },
+    "origin": "original",
+    "rights": {
+      "redistribution": "unknown",
+      "embedding": "allowed"
+    },
+    "sourceCatalog": "https://github.com/MartinDelophy/awesome-gpt-6-astra",
+    "sourceEntry": "https://iron-bastion.zecoba.workers.dev",
+    "featured": false,
+    "id": "c3ee6248-6eb6-4716-9777-0526cd8e66f6",
+    "slug": "iron-bastion",
+    "status": "published",
+    "discoveredAt": "2026-09-16T13:57:11.056Z",
+    "createdAt": "2026-09-16T14:02:29.630Z"
+  },
+  {
+    "title": "ASTEROIDS Â· Deepfield",
+    "description": "Pilot an Asteroids-style cockpit with four camera views, radar, twin cannons and inertial flight.",
+    "shortDescription": "An Asteroids-style cockpit shooter with radar and inertial flight.",
+    "categories": [
+      "Action",
+      "Arcade"
+    ],
+    "tags": [
+      "asteroids",
+      "cockpit",
+      "space shooter",
+      "webgl"
+    ],
+    "thumbnail": "",
+    "screenshots": [],
+    "creator": {
+      "name": "Eyes Wide Open",
+      "url": "https://github.com/MartinDelophy/awesome-gpt-6-astra"
+    },
+    "play": {
+      "url": "https://asteroids-deepfield-cockpit.dan200200.chatgpt.site",
+      "mode": "embedded"
+    },
+    "platform": {
+      "desktop": true,
+      "mobile": false,
+      "touch": false,
+      "keyboard": true,
+      "gamepad": false
+    },
+    "origin": "original",
+    "rights": {
+      "redistribution": "unknown",
+      "embedding": "allowed"
+    },
+    "sourceCatalog": "https://github.com/MartinDelophy/awesome-gpt-6-astra",
+    "sourceEntry": "https://asteroids-deepfield-cockpit.dan200200.chatgpt.site",
+    "featured": false,
+    "id": "1784fdd0-d6fd-4486-ab2e-cf64142c31fc",
+    "slug": "asteroids-deepfield",
+    "status": "published",
+    "discoveredAt": "2026-09-16T13:57:11.743Z",
+    "createdAt": "2026-09-16T14:02:30.548Z"
+  },
+  {
+    "title": "Mosswing: Quiet Flight",
+    "description": "A calm 3D tap-to-flap flight game where you guide a mosswing through a quiet sky.",
+    "shortDescription": "A gentle 3D tap-to-flap flight experience.",
+    "categories": [
+      "Arcade",
+      "Casual"
+    ],
+    "tags": [
+      "3D",
+      "flight",
+      "tap-to-flap",
+      "relaxing"
+    ],
+    "thumbnail": "",
+    "screenshots": [],
+    "creator": {
+      "name": "Ayi1337",
+      "url": "https://github.com/MartinDelophy/awesome-gpt-6-astra"
+    },
+    "play": {
+      "url": "https://mosswing-quiet-flight.jack-514.chatgpt.site",
+      "mode": "embedded"
+    },
+    "platform": {
+      "desktop": true,
+      "mobile": true,
+      "touch": true,
+      "keyboard": false,
+      "gamepad": false
+    },
+    "origin": "inspired",
+    "rights": {
+      "redistribution": "unknown",
+      "embedding": "allowed"
+    },
+    "sourceCatalog": "https://github.com/MartinDelophy/awesome-gpt-6-astra",
+    "sourceEntry": "https://mosswing-quiet-flight.jack-514.chatgpt.site",
+    "featured": false,
+    "id": "aa76d55c-6665-4015-9a82-99e70383b3f4",
+    "slug": "mosswing-quiet-flight",
+    "status": "published",
+    "discoveredAt": "2026-09-16T14:18:06.761Z",
+    "createdAt": "2026-09-16T14:18:07.751Z"
+  },
+  {
+    "title": "Stadium Elite — El Clásico",
+    "description": "A desktop 3D football experience inspired by the intensity and spectacle of El Clásico.",
+    "shortDescription": "A 3D football match built for desktop play.",
+    "categories": [
+      "Sports",
+      "Action"
+    ],
+    "tags": [
+      "football",
+      "soccer",
+      "3D",
+      "desktop"
+    ],
+    "thumbnail": "",
+    "screenshots": [],
+    "creator": {
+      "name": "Mindblown (@mind)",
+      "url": "https://github.com/MartinDelophy/awesome-gpt-6-astra"
+    },
+    "play": {
+      "url": "https://stadium-elite.mindblown.ai",
+      "mode": "external"
+    },
+    "platform": {
+      "desktop": true,
+      "mobile": false,
+      "touch": false,
+      "keyboard": true,
+      "gamepad": false
+    },
+    "origin": "inspired",
+    "rights": {
+      "redistribution": "unknown",
+      "embedding": "not-allowed"
+    },
+    "sourceCatalog": "https://github.com/MartinDelophy/awesome-gpt-6-astra",
+    "sourceEntry": "https://stadium-elite.mindblown.ai",
+    "featured": false,
+    "id": "47c30ee7-a840-4e01-be62-19e9b3f08b98",
+    "slug": "stadium-elite-el-cl-sico",
+    "status": "published",
+    "discoveredAt": "2026-09-16T14:18:08.226Z",
+    "createdAt": "2026-09-16T14:18:19.033Z"
+  },
+  {
+    "title": "BLACKWATER · Silent Harbor",
+    "description": "A desktop tactical first-person shooter set in a tense, silent harbor operation.",
+    "shortDescription": "A tactical FPS set around a silent harbor mission.",
+    "categories": [
+      "Action",
+      "Shooter"
+    ],
+    "tags": [
+      "tactical FPS",
+      "first-person shooter",
+      "harbor",
+      "desktop"
+    ],
+    "thumbnail": "",
+    "screenshots": [],
+    "creator": {
+      "name": "hiraeth",
+      "url": "https://github.com/MartinDelophy/awesome-gpt-6-astra"
+    },
+    "play": {
+      "url": "https://blackwater-roan.vercel.app",
+      "mode": "embedded"
+    },
+    "platform": {
+      "desktop": true,
+      "mobile": false,
+      "touch": false,
+      "keyboard": true,
+      "gamepad": false
+    },
+    "origin": "inspired",
+    "rights": {
+      "redistribution": "unknown",
+      "embedding": "allowed"
+    },
+    "sourceCatalog": "https://github.com/MartinDelophy/awesome-gpt-6-astra",
+    "sourceEntry": "https://blackwater-roan.vercel.app",
+    "featured": false,
+    "id": "a9fbd4c9-645d-4ec9-8302-dbb5b54da36e",
+    "slug": "blackwater-silent-harbor",
+    "status": "published",
+    "discoveredAt": "2026-09-16T14:18:09.614Z",
+    "createdAt": "2026-09-16T14:18:10.589Z"
+  }
+]

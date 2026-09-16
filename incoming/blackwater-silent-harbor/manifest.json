@@ -1,0 +1,32 @@
+{
+  "title": "BLACKWATER · Silent Harbor",
+  "description": "A desktop tactical first-person shooter set in a tense, silent harbor operation.",
+  "shortDescription": "A tactical FPS set around a silent harbor mission.",
+  "categories": ["Action", "Shooter"],
+  "tags": ["tactical FPS", "first-person shooter", "harbor", "desktop"],
+  "thumbnail": "",
+  "screenshots": [],
+  "creator": {
+    "name": "hiraeth",
+    "url": "https://github.com/MartinDelophy/awesome-gpt-6-astra"
+  },
+  "play": {
+    "url": "https://blackwater-roan.vercel.app",
+    "mode": "external"
+  },
+  "platform": {
+    "desktop": true,
+    "mobile": false,
+    "touch": false,
+    "keyboard": true,
+    "gamepad": false
+  },
+  "origin": "inspired",
+  "rights": {
+    "redistribution": "unknown",
+    "embedding": "not-allowed"
+  },
+  "sourceCatalog": "https://github.com/MartinDelophy/awesome-gpt-6-astra",
+  "sourceEntry": "https://blackwater-roan.vercel.app",
+  "featured": false
+}

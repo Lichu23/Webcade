@@ -1,0 +1,32 @@
+{
+  "title": "Mosswing: Quiet Flight",
+  "description": "A calm 3D tap-to-flap flight game where you guide a mosswing through a quiet sky.",
+  "shortDescription": "A gentle 3D tap-to-flap flight experience.",
+  "categories": ["Arcade", "Casual"],
+  "tags": ["3D", "flight", "tap-to-flap", "relaxing"],
+  "thumbnail": "",
+  "screenshots": [],
+  "creator": {
+    "name": "Ayi1337",
+    "url": "https://github.com/MartinDelophy/awesome-gpt-6-astra"
+  },
+  "play": {
+    "url": "https://mosswing-quiet-flight.jack-514.chatgpt.site",
+    "mode": "embedded"
+  },
+  "platform": {
+    "desktop": true,
+    "mobile": true,
+    "touch": true,
+    "keyboard": false,
+    "gamepad": false
+  },
+  "origin": "inspired",
+  "rights": {
+    "redistribution": "unknown",
+    "embedding": "allowed"
+  },
+  "sourceCatalog": "https://github.com/MartinDelophy/awesome-gpt-6-astra",
+  "sourceEntry": "https://mosswing-quiet-flight.jack-514.chatgpt.site",
+  "featured": false
+}
