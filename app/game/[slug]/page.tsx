@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import games from "../../../data/games.json";
 import { getPlayConfiguration, type Game } from "../../../lib/game";
 import PlayRunner from "./play-runner";
+import PersonalActions from "./personal-actions";
 
 const catalog = games as Game[];
 
@@ -22,9 +23,9 @@ export default async function GamePage({ params }: { params: Promise<{ slug: str
     <header className="site-header"><Link className="back-link" href="/">← All games</Link><Link className="brand" href="/">ASTRA <span>ARCADE</span></Link></header>
     <section className="game-hero">
       <div className="detail-art game-art" style={{ backgroundImage: game.thumbnail ? `url(${game.thumbnail})` : undefined }}>{!game.thumbnail && <span>{game.title.slice(0, 1).toUpperCase()}</span>}</div>
-      <div className="detail-intro"><p className="eyebrow">{game.categories.join(" · ") || "Arcade"}</p><h1>{game.title}</h1><p>{game.description}</p><p className="play-note">{play.mode === "external" ? "This game is played on the creator's original site." : play.mode === "unavailable" ? "Play is unavailable until the catalog record is reviewed." : "The permitted playable version is isolated from the arcade."}</p></div>
+      <div className="detail-intro"><p className="eyebrow">{game.categories.join(" · ") || "Arcade"}</p><h1>{game.title}</h1><p>{game.description}</p><PersonalActions slug={game.slug} title={game.title} /><p className="play-note">{play.mode === "external" ? "This game is played on the creator's original site." : play.mode === "unavailable" ? "Play is unavailable until the catalog record is reviewed." : "The permitted playable version is isolated from the arcade."}</p></div>
     </section>
-    <PlayRunner gameTitle={game.title} play={play} />
+    <PlayRunner gameTitle={game.title} gameSlug={game.slug} play={play} />
     <section className="detail-grid">
       <div><h2>About this game</h2><p>{game.shortDescription || game.description}</p><div className="tag-list">{game.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></div>
       <aside><h2>Credits</h2><p>Created by <CreatorLink creator={game.creator} /></p>{game.source?.repository && <p><a href={game.source.repository} target="_blank" rel="noopener noreferrer">View source ↗</a></p>}<p className="muted">{game.origin === "original" ? "Original project" : game.origin === "inspired" ? "Inspired experiment" : "Fan experiment"}</p></aside>

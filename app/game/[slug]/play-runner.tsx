@@ -2,10 +2,11 @@
 
 import { useEffect, useRef, useState } from "react";
 import type { PlayConfiguration } from "../../../lib/game";
+import { recordGamePlay } from "../../../lib/personal";
 
 type RunnerState = "loading" | "ready" | "error" | "blocked";
 
-export default function PlayRunner({ gameTitle, play }: { gameTitle: string; play: PlayConfiguration }) {
+export default function PlayRunner({ gameTitle, gameSlug, play }: { gameTitle: string; gameSlug: string; play: PlayConfiguration }) {
   const [state, setState] = useState<RunnerState>("loading");
   const [fullscreenError, setFullscreenError] = useState(false);
   const runnerRef = useRef<HTMLDivElement>(null);
@@ -15,10 +16,21 @@ export default function PlayRunner({ gameTitle, play }: { gameTitle: string; pla
     setFullscreenError(false);
   }, [play.mode, play.url]);
 
-  if (play.mode === "external") return <ExternalPlay gameTitle={gameTitle} href={play.url!} message={play.message} />;
+  if (play.mode === "external") return <ExternalPlay gameTitle={gameTitle} href={play.url!} message={play.message} onPlay={() => recordGamePlay(gameSlug)} />;
   if (play.mode === "unavailable" || !play.url) return <section className="runner-unavailable" aria-live="polite"><p className="eyebrow">Play unavailable</p><h2>There is no authorized way to launch this game yet.</h2><p>{play.message ?? "The owner needs to review its playable link and permissions."}</p></section>;
 
   const openFallback = play.mode === "embedded" ? play.fallbackUrl ?? play.url : undefined;
+  // External embedded games need their real origin so module scripts and other
+  // same-origin assets are not treated as coming from an opaque `null` origin.
+  // Self-hosted games intentionally remain opaque to prevent same-origin access.
+  const sandbox = [
+    "allow-forms",
+    "allow-pointer-lock",
+    "allow-popups",
+    "allow-popups-to-escape-sandbox",
+    "allow-scripts",
+    ...(play.mode === "embedded" ? ["allow-same-origin"] : []),
+  ].join(" ");
   const requestFullscreen = async () => {
     try {
       await runnerRef.current?.requestFullscreen();
@@ -38,11 +50,10 @@ export default function PlayRunner({ gameTitle, play }: { gameTitle: string; pla
         className={state === "ready" ? "game-frame is-ready" : "game-frame"}
         title={`${gameTitle} game`}
         src={play.url}
-        sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-scripts"
+        sandbox={sandbox}
         allow="fullscreen; gamepad"
-        allowFullScreen
         referrerPolicy="no-referrer"
-        onLoad={() => setState("ready")}
+        onLoad={() => { setState("ready"); recordGamePlay(gameSlug); }}
         onError={() => setState("error")}
       />}
     </div>
@@ -54,8 +65,8 @@ export default function PlayRunner({ gameTitle, play }: { gameTitle: string; pla
   </section>;
 }
 
-function ExternalPlay({ gameTitle, href, message }: { gameTitle: string; href: string; message?: string }) {
-  return <section className="external-play"><p className="eyebrow">Play on the original site</p><h2>{gameTitle} is hosted by its creator.</h2><p>{message ?? "This game opens in a new tab so the creator's original version and security settings are respected."}</p><a className="primary-button" href={href} target="_blank" rel="noopener noreferrer">Play original game ↗</a></section>;
+function ExternalPlay({ gameTitle, href, message, onPlay }: { gameTitle: string; href: string; message?: string; onPlay: () => void }) {
+  return <section className="external-play"><p className="eyebrow">Play on the original site</p><h2>{gameTitle} is hosted by its creator.</h2><p>{message ?? "This game opens in a new tab so the creator's original version and security settings are respected."}</p><a className="primary-button" href={href} target="_blank" rel="noopener noreferrer" onClick={onPlay}>Play original game ↗</a></section>;
 }
 
 function RunnerFallback({ eyebrow, title, description, href }: { eyebrow: string; title: string; description: string; href?: string }) {
